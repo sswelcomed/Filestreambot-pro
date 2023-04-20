@@ -36,5 +36,5 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb://marchisekaistore:<password>@ac-39wlra8-shard-00-00.shqxq5k.mongodb.net:27017,ac-39wlra8-shard-00-01.shqxq5k.mongodb.net:27017,ac-39wlra8-shard-00-02.shqxq5k.mongodb.net:27017/?ssl=true&replicaSet=atlas-m7hdvw-shard-0&authSource=admin&retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', '-1001825706360'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'welcomedbot_isback'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
